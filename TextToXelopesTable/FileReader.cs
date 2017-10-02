@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TextToTable.Tests
+namespace TextToXelopesTable
 {
     public class FileReader :IFileReader
     {
