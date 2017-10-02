@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BorodaTextToTable", "BorodaTextToTable\BorodaTextToTable.csproj", "{8C39AB85-4A70-405F-BA0B-B7F3D300151C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextToXelopesTable", "TextToXelopesTable\TextToXelopesTable.csproj", "{6EA65580-F6E5-4A07-A3CC-BFE2FF7E671E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextToTable.Tests", "TextToTable.Tests\TextToTable.Tests.csproj", "{DF5A98EC-8060-42E5-9BCC-20D6AD23A85C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8C39AB85-4A70-405F-BA0B-B7F3D300151C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C39AB85-4A70-405F-BA0B-B7F3D300151C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C39AB85-4A70-405F-BA0B-B7F3D300151C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C39AB85-4A70-405F-BA0B-B7F3D300151C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA65580-F6E5-4A07-A3CC-BFE2FF7E671E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA65580-F6E5-4A07-A3CC-BFE2FF7E671E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA65580-F6E5-4A07-A3CC-BFE2FF7E671E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA65580-F6E5-4A07-A3CC-BFE2FF7E671E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5A98EC-8060-42E5-9BCC-20D6AD23A85C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5A98EC-8060-42E5-9BCC-20D6AD23A85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5A98EC-8060-42E5-9BCC-20D6AD23A85C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5A98EC-8060-42E5-9BCC-20D6AD23A85C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
