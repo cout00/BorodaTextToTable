@@ -17,6 +17,14 @@ namespace TextToXelopesTable
             Parse();
         }
 
+        public List<List<string>> GetSentances
+        {
+            get
+            {
+                return Sentances;
+            }
+        }
+
         void Parse()
         {
             using (filereader.GetStream())
@@ -27,6 +35,10 @@ namespace TextToXelopesTable
                 var WordsInSentance = new List<string>();
                 for (int i = 0; i < parsStr.Length; i++)
                 {
+                    if (parsStr[i] == '/')
+                    {
+                        var me=1;
+                    }
                     if (parsStr[i].IsBlackList())
                     {
                         continue;
@@ -50,7 +62,7 @@ namespace TextToXelopesTable
                         }
                     }
                     if (parsStr[i] == ' ' || parsStr[i] == '/')
-                    {
+                    {                        
                         if (curstr.isDigit() || curstr.Length < 4)
                         {
                             curstr = string.Empty;
@@ -71,7 +83,6 @@ namespace TextToXelopesTable
                             Sentances.Add(WordsInSentance);
                             curstr = string.Empty;
                             WordsInSentance = new List<string>();
-                            i++;
                             i++;
                             continue;
                         }
