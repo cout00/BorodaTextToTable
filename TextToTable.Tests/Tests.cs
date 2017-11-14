@@ -16,10 +16,16 @@ namespace TextToTable.Tests
         [Test]
         public void ParserTest()
         {
+            
+
+
             var filereader = MockRepository.GenerateStub<IFileReader>();
-            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"81.txt");
+            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "81.txt");
             filereader.Expect(r => r.GetStream()).Return(new StreamReader(path));
-            StringParser sp = new StringParser(filereader);
+           // StringParser sp = new StringParser(filereader);
+            TextGenerator tg = new TextGenerator(filereader, "test");
+            File.WriteAllText(@"G:\Text.arff", tg.GetHeader().ToString());
+
         }
     }
 }

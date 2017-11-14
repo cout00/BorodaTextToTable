@@ -7,17 +7,20 @@ using System.Threading.Tasks;
 
 namespace TextToXelopesTable
 {
-    public class FileReader :IFileReader
+    public class FileReader : IFileReader
     {
-        public FileReader()
+        string path;
+        public FileReader(string directory)
         {
-
+            path = directory;
         }
 
         public StreamReader GetStream()
         {
-            // реализация
-            return null;
+            StreamReader streamReader = new StreamReader(path);
+            return streamReader;
         }
+
+        
     }
 }

@@ -24,7 +24,7 @@ namespace TextToXelopesTable
         public static bool IsBlackList(this char symb)
         {
             var list= Enumerable.Range(33, 13).ToList();
-            list.Add(47);
+            //list.Add(47);
             list.AddRange(Enumerable.Range(58, 6));
             return list.Contains(symb);
         }
